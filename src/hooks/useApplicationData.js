@@ -25,15 +25,15 @@ export default function useApplicationData() {
     about: "Full stack, junior web developer who loves the Maple Leafs."
   })
 
-  useEffect(() => {
-    let chosen = Math.floor(Math.random() * Math.floor(10))
-    const newState = {
-      ...state, avatar : avatars[chosen]
-    }
-    setState(newState)
-  },[state.name])
+  // useEffect(() => {
+  //   let chosen = Math.floor(Math.random() * Math.floor(10))
+  //   const newState = {
+  //     ...state, avatar : avatars[chosen]
+  //   }
+  //   setState(newState)
+  // },[state.name])
 
-    const avatars =  ["https://i.imgur.com/nlhLi3I.png","https://i.imgur.com/z5LNkkB.png","https://i.imgur.com/v0JXau2.png","https://i.imgur.com/lRUnDgU.png", "https://i.imgur.com/3GvwNBf.png", "https://i.imgur.com/73hZDYK.png","https://i.imgur.com/5fUVPRP.png","https://i.imgur.com/DVpDmdR.png","https://i.imgur.com/2WZtOD6.png", "https://i.imgur.com/ilT4JDe.png"]
+  //   const avatars =  ["https://i.imgur.com/nlhLi3I.png","https://i.imgur.com/z5LNkkB.png","https://i.imgur.com/v0JXau2.png","https://i.imgur.com/lRUnDgU.png", "https://i.imgur.com/3GvwNBf.png", "https://i.imgur.com/73hZDYK.png","https://i.imgur.com/5fUVPRP.png","https://i.imgur.com/DVpDmdR.png","https://i.imgur.com/2WZtOD6.png", "https://i.imgur.com/ilT4JDe.png"]
 
   const setAccountInfo = function(_state){
     const newState = {
