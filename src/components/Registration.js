@@ -5,6 +5,7 @@ import {Form, Col, Button} from 'react-bootstrap'
 
 export default function Registration(props) {
   const [state, setState] = useState({
+    avatar: "https://bootdey.com/img/Content/avatar/avatar7.png",
     name : {
       first: "",
       last: ""
